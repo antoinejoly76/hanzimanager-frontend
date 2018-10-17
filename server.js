@@ -9,5 +9,5 @@ app.listen(process.env.PORT || 4200);
 //Path Location Strategy
 
 app.get('/*', function (req, res) {
-    res.sendFile('index.html');
+    res.sendFile('/app/dist/hanzimanager/index.html');
 })
