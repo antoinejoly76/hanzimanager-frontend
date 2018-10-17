@@ -3,6 +3,7 @@ import { CCharacter } from "./character.model";
 import { CCharacterEdit } from "./character-edit/characteredit.model"
 import { HttpClient } from '@angular/common/http'
 import { SearchService } from "../search/search.service";
+import { environment } from '../../environments/environment';
 
 @Injectable({
     providedIn: 'root'
@@ -12,7 +13,7 @@ import { SearchService } from "../search/search.service";
 
 export class CharacterService implements OnInit {
     characterSelected: CCharacter;
-    uri = 'http://localhost:4000';
+    uri = environment.serverUrl;
     newCharacterSelected = new EventEmitter<CCharacter>();
     body;
 

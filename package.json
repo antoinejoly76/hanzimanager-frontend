@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "startprod": "ng build && node server.js",
+    "startprod": "ng build --configuration=production && node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

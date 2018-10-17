@@ -2,8 +2,7 @@ import { Injectable, EventEmitter, Output } from '@angular/core';
 import { SearchResolveMockService } from './mock-services/search-resolve-mock-service';
 import { CCharacter } from '../character/character.model';
 import { HttpClient } from '@angular/common/http'
-import { CharacterService } from '../character/character.service';
-
+import { environment } from '../../environments/environment';
 
 
 @Injectable({
@@ -14,7 +13,9 @@ export class SearchService {
   private searchResults;
 
   listResults = new EventEmitter<CCharacter[]>();
-  uri = 'http://localhost:4000';
+
+
+  uri = environment.serverUrl;
 
 
   // getInputTypeSelected() {
