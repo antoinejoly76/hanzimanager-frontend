@@ -11,9 +11,9 @@
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
-          <li (click)="tempState='unknown'" [ngClass]="{'disabled' : charService.getState() === 'unknown'}" ><a href="#">unknown</a></li>
-          <li (click)="tempState='encountered'" [ngClass]="{'disabled' : charService.getState() === 'encountered'}"><a href="#" >encountered</a></li>
-          <li (click)="tempState='mastered'" [ngClass]="{'disabled' : charService.getState() === 'mastered'}"><a href="#">mastered</a></li>
+          <li (click)="tempState='unknown'" [ngClass]="{'disabled' : tempState === 'unknown'}" ><a href="#">unknown</a></li>
+          <li (click)="tempState='encountered'" [ngClass]="{'disabled' : tempState === 'encountered'}"><a href="#" >encountered</a></li>
+          <li (click)="tempState='mastered'" [ngClass]="{'disabled' :  tempState === 'mastered'}"><a href="#">mastered</a></li>
       </ul>
     </div>
 

@@ -9,7 +9,7 @@ import { CharacterService } from './character.service';
 })
 export class CharacterComponent implements OnInit {
   characterToDisplay: CCharacter;
-  constructor(private charService: CharacterService) { }
+  constructor(public charService: CharacterService) { } // TODO FIX this public, this is to pass compilation
 
   ngOnInit() {
     this.characterToDisplay = this.charService.characterSelected;
