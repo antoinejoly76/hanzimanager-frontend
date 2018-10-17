@@ -1,0 +1,32 @@
+<div class="container">
+<div class="row">
+  
+
+
+<div class="col-md-2">
+  
+  <div appDropdown class="dropdown">
+      <button  class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ tempState }}
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+          <li (click)="tempState='unknown'" [ngClass]="{'disabled' : charService.getState() === 'unknown'}" ><a href="#">unknown</a></li>
+          <li (click)="tempState='encountered'" [ngClass]="{'disabled' : charService.getState() === 'encountered'}"><a href="#" >encountered</a></li>
+          <li (click)="tempState='mastered'" [ngClass]="{'disabled' : charService.getState() === 'mastered'}"><a href="#">mastered</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <div class="col-md-6">
+    <textarea style="min-width: 100%" id="comment" #tempComment></textarea>
+  </div>
+  <div class="col-md-1">
+    
+    <button (click)="onClickUpdate()" type="button" class="btn btn-primary">Send</button>
+    
+    </div>
+</div>
+</div>

@@ -1,0 +1,11 @@
+[37m** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **[39m
+[37m
+[0mDate: [1m[37m2018-10-15T14:14:26.224Z[39m[22m
+Hash: [1m[37m7289a4e43899badd4686[39m[22m
+Time: [1m[37m19196[39m[22mms
+chunk {[1m[33mmain[39m[22m} [1m[32mmain.js, main.js.map[39m[22m (main) 56.1 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m
+chunk {[1m[33mpolyfills[39m[22m} [1m[32mpolyfills.js, polyfills.js.map[39m[22m (polyfills) 227 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m
+chunk {[1m[33mruntime[39m[22m} [1m[32mruntime.js, runtime.js.map[39m[22m (runtime) 6.22 kB [1m[33m[entry][39m[22m[1m[32m [rendered][39m[22m
+chunk {[1m[33mstyles[39m[22m} [1m[32mstyles.js, styles.js.map[39m[22m (styles) 134 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m
+chunk {[1m[33mvendor[39m[22m} [1m[32mvendor.js, vendor.js.map[39m[22m (vendor) 3.37 MB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m[39m
+[34mi[39m [90m｢wdm｣[39m: Compiled successfully.

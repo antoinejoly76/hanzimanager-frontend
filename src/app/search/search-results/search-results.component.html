@@ -1,0 +1,8 @@
+<div  class="list-group">
+
+  <app-search-result-item *ngFor = "let character of searchResults" [itemChar]="character">
+    <a href="#" class="list-group-item" (click)="onClickItem(character)" [ngClass]="{'active': character == itemCurrentlySelected}">{{ character.hanzi }} </a> 
+
+  </app-search-result-item> 
+  
+</div>

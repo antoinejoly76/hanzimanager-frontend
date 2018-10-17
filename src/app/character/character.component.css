@@ -1,0 +1,13 @@
+div {
+    text-align: center;
+}
+h1 {
+    font-family: "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    font-size: 70px;
+}
+
+.cstbutton {
+    height: 100px;
+    width: 100%;
+    font-size: 40px;
+}

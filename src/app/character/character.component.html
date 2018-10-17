@@ -1,0 +1,96 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h1 class="panel-title">{{ characterToDisplay.hanzi }} </h1>
+                </div>
+            </div>
+          
+        </div>
+    <div class="col-md-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+              <h2 class="panel-title">State</h2>
+            </div>
+            <div class="panel-body">
+                <p>{{ charService.getState() }} </p>
+              </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+              <h2 class="panel-title">Last updated</h2>
+            </div>
+            <div class="panel-body">
+                <p> {{ charService.getLastModifiedDate() }}</p>
+              </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-primary">
+           
+              <button type="button" class="btn btn-primary cstbutton">Edit</button>
+              
+            </div>
+      
+      
+    </div>
+      
+     
+      </div>
+  <div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Pinyin</h2>
+            </div>
+            <div class="panel-body">
+                <h4> {{ characterToDisplay.pinyin }}</h4>
+              </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Definition</h2>
+            </div>
+            <div class="panel-body">
+                <p>{{ characterToDisplay.definition }}</p>
+              </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Frequency</h2>
+            </div>
+            <div class="panel-body">
+                <p>{{ characterToDisplay.frequency }} </p>
+              </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">HSK Level</h2>
+            </div>
+            <div class="panel-body">
+                <p>{{ charService.getHSKLevel() }} </p>
+              </div>
+        </div>
+    </div>
+  </div>
+  
+
+
+</div>
+<hr>
+
+<app-comments *ngFor="let comment of characterToDisplay.comments; index as i" [index]="(i+1)" [comment]="comment"></app-comments>
+
+
+<app-character-edit></app-character-edit>
